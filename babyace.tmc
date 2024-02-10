@@ -1,0 +1,145 @@
+<[file][][]
+    <[object][][]
+        <[int][Version][220]>
+        <[vec32array][ContactSpheres][ (0.353 0.721 -1.121 0.215) (0.353 -0.721 -1.121 0.215) (-3.775 0.000 -0.499 0.061) ]>
+        <[string8][ICAO][BACE]>
+        <[string8][DisplayName][Corben Baby Ace]>
+        <[string8][DisplayNameFull][Corben Baby Ace]>
+        <[localized_text_list][Descriptions][]
+            <[localized_text][][]
+                <[string8][Language][en]>
+                <[string8][Text][The Ace Baby Ace was the world's first aircraft to be marketed as a homebuilt aircraft when its plans were offered for sale in 1929. Plans are still available and Baby Aces are still being built today. Orland Corben designed a series of aircraft for the Ace Aircraft Manufacturing Company, the Baby Ace, Junior Ace, and Super Ace. Corben's name was associated with the aircraft, and it is commonly known as the Corben Baby Ace. Made by Krzysztof Kaniewski. 3D model: FTLX Designs.]>
+            >
+            <[localized_text][][]
+                <[string8][Language][de]>
+                <[string8][Text][Der Ace Baby Ace war das weltweit erste Flugzeug, das als Selbstbauflugzeug vermarktet wurde, als seine Baupläne 1929 zum Verkauf angeboten wurden. Die Pläne sind immer noch erhältlich, und Baby Aces werden auch heute noch gebaut. Orland Corben entwarf eine Serie von Flugzeugen für die Ace Aircraft Manufacturing Company, den Baby Ace, Junior Ace und Super Ace. Corbens Name war mit dem Flugzeug verbunden, und es ist allgemein als Corben Baby Ace bekannt. Hergestellt von Krzysztof Kaniewski. 3D-Modell: FTLX Designs.]>
+            >			
+        >
+        <[float64][MaximumTakeoffMass][430.9]>
+        <[float64][WingSpan]          [8.1]>
+        <[uint]   [Year]              [1929]>
+        <[uint]   [UnitsBuilt]        [6884]>
+        <[uint]   [EngineCount]       [1]>
+        <[float64][EnginePower]       [48470]>
+        <[float64][MinimumAirspeed]   [17.0]>
+        <[float64][ApproachAirspeed]  [22.1]>
+        <[float64][CruiseAirspeed]    [56.3]>
+        <[float64][CruiseAltitude]    [3352.8]>
+        <[float64][CruiseSpeed]       [59.4]>
+        <[float64][MaximumAirspeed]   [62.5]>
+        <[float64][MaximumAltitude]   [6306.0]>
+        <[float64][MaximumSpeed]      [62.5]>
+        <[float64][MaximumRange]      [2276000.0]>
+        <[tmvector2d][FlapAirspeedRange]   [ 0.0  0.0  ]>
+        <[tmvector2d][NormalAirspeedRange] [ 17.0 52.5 ]>
+        <[tmvector2d][CautionAirspeedRange][ 52.5 62.5 ]>
+        <[string8][Tags][ airplane historical piston general_aviation gear tailgear ]>
+        <[string8][Pilot][pilot_peter]>
+    >
+>
+// ACF shifted [m] x:0.7 y:0 z:0
+// Cockpit type: General Aviation
+// Vso_kts: 34.0 stall speed in landing configuration
+// Vfe1_kts: 999.0 flaps extended 1st dep
+// Vle_kts: 99999.0 maximum landing-gear extended speed
+// Vno_kts: 105.0 maximum structural cruising speed or maximum speed for normal operations
+// Vne_kts: 125.0 never exeed speed
+// V_ref_ms:  reference speed for final approach, normally 1.3Vso
+// Empty mass [lb]: 582 [kg]: 264.0
+// Fuel mass [lb]: 72 [kg]: 32.7 => about [L]: 41.9
+// max mass [lb]: 950 [kg]: 430.9
+// model mass [lb]: 654 [kg]: 296.6
+// load G: -3.2 to 4.0
+// Ground altitude: 4.5740 3.85 deg
+// Propeller 0 [1.325 0.000 0.000]  blades 2 CCW  radius [m] 0.914 mass [kg] 13.4
+// Max HP power: 65.0 (48.5 kW)
+// Radio COMM equiped
+// Stall warning AOA 10.0
+//   no|area|R0|R1|T0|T1|span|Croot|Ctip|x|y|z|fl0|fl1|flb|L_R|name|description
+//   0|0.131|Clark-Y (good propeller).afl ||||0.914|0.156|0.131|0.666|-0.457|0.000||||R|Propeller|
+//   8|5.247|clark_y.afl  CHECK IT||||3.825|1.372|1.372|-0.207|1.912|0.588|ailn1|||L|LeftWing|
+//   9|5.247|clark_y.afl  CHECK IT||||3.825|1.372|1.372|-0.207|-1.912|0.588|ailn1|||R|RightWing|
+//   10|0.293|clark_y.afl  CHECK IT||||0.213|1.372|1.372|-0.161|3.932|0.624||||L|LeftWing2|
+//   11|0.293|clark_y.afl  CHECK IT||||0.213|1.372|1.372|-0.161|-3.932|0.624||||R|RightWing2|
+//   12|0.130|NACA 0006 (symmetrical).afl ||||2.377|0.055|0.055|0.284|1.293|0.003||||L|LeftWing3|
+//   13|0.130|NACA 0006 (symmetrical).afl ||||2.377|0.055|0.055|0.284|-1.293|0.003||||R|RightWing3|
+//   14|0.130|NACA 0006 (symmetrical).afl ||||2.377|0.055|0.055|-0.448|1.263|-0.021||||L|LeftWing4|
+//   15|0.130|NACA 0006 (symmetrical).afl ||||2.377|0.055|0.055|-0.448|-1.263|-0.021||||R|RightWing4|
+//   16|0.962|NACA 0006 (symmetrical).afl ||||1.052|0.914|0.914|-3.307|0.526|0.061|elev1|elev2||L|LeftStabilizer|
+//   17|0.962|NACA 0006 (symmetrical).afl ||||1.052|0.914|0.914|-3.307|-0.526|0.061|elev1|elev2||R|RightStabilizer|
+//   18|0.973|NACA 0009 (symmetrical).afl ||||1.039|0.936|0.936|-3.340|0.000|0.209|rudd1|rudd2||R|VertStabilizer1|
+//   20|0.011|round strut.afl  CHECK IT||||0.594|0.018|0.018|0.456|0.102|0.266||||R|MiscWing1|
+//   21|0.011|round strut.afl  CHECK IT||||0.594|0.018|0.018|0.456|-0.102|0.266||||L|MiscWing2|
+//   22|0.010|round strut.afl  CHECK IT||||0.521|0.018|0.018|0.271|0.116|0.264||||R|MiscWing3|
+//   23|0.010|round strut.afl  CHECK IT||||0.521|0.018|0.018|0.271|-0.116|0.264||||L|MiscWing4|
+//   24|0.010|round strut.afl  CHECK IT||||0.521|0.018|0.018|-0.481|0.113|0.266||||R|MiscWing5|test1
+//   25|0.010|round strut.afl  CHECK IT||||0.521|0.018|0.018|-0.481|-0.113|0.266||||L|MiscWing6|
+//   26|0.017|NACA 0009 (symmetrical).afl ||||0.472|0.037|0.037|0.285|-1.396|0.285||||R|MiscWing7|
+//   27|0.017|NACA 0009 (symmetrical).afl ||||0.472|0.037|0.037|0.285|1.396|0.285||||L|MiscWing8|
+//   28|0.017|NACA 0009 (symmetrical).afl ||||0.472|0.037|0.037|-0.449|-1.396|0.285||||R|MiscWing9|
+//   29|0.017|NACA 0009 (symmetrical).afl ||||0.472|0.037|0.037|-0.449|1.396|0.285||||L|MiscWing10|
+//   parts no|radius|name|size x*y*z|Cd|description|
+//   56|3.0|Fuselage|3.837 0.563 0.984|0.150000006|ESUFEGAL
+//   57|2.0|MiscBody1|0.320 0.578 0.198|0.275000006|speed brake
+//   77|2.0|Nacelle1|0.152 0.173 0.154|0.096000001|serpra e
+//   gear no|name|X|Y|Z|Type|Fraction|Length|radius|retract|SteerLo|SteerHi|weight|width
+//   gear 0|LeftWheelHull|-0.382|0.213|-0.427|2|0.437|1.128|0.357|0.000|0.0000|0.0000|51.7|0.329
+//   gear 1|RightWheelHull|-0.382|-0.213|-0.427|2|0.437|1.128|0.357|0.000|0.0000|0.0000|51.7|0.329
+//   gear 2|TailWheelHull|-3.457|0.000|-0.238|2|0.125|0.366|0.061|0.000|0.4712|0.4712|3.6|0.055
+// CG range: 0.20 to -0.07
+// Rigidbody: Fuselage 102.2 kg at 0.066
+// Rigidbody: 8 LeftWing 37.1 kg at -0.207
+// Rigidbody: 9 RightWing 37.1 kg at -0.207
+// Gearbody: 0 LeftWheelHull 51.7 kg at -0.382
+// Gearbody: 1 RightWheelHull 51.7 kg at -0.382
+// Gearbody: 2 TailWheelHull 3.6 kg at -3.457
+// CG (fuselage): 0.066 (plane) -0.204 (delta) 0.093
+// Plane ref: undefined
+//   empty craft 260.8 kg at 0.066016
+//   fuel tank #1 35.9 kg at 0.288520
+//   fuel tank #2 0.5 kg at 0.700000
+//   fuel tank #3 0.5 kg at 0.700000
+//   fuel tank #4 0.5 kg at 0.700000
+//   fuel tank #5 0.5 kg at 0.700000
+//   fuel tank #6 0.5 kg at 0.700000
+//   fuel tank #7 0.5 kg at 0.700000
+//   fuel tank #8 0.5 kg at 0.700000
+//   fuel tank #9 0.5 kg at 0.700000
+// Elevator -32.0 to 32.0 width 0.50  <[float64][Scaling][1.7905]>
+// Elevator2 -32.0 to 32.0 width 0.50  <[float64][Scaling][1.7905]>
+// Aileron -20.0 to 20.0 width 0.31  <[float64][Scaling][2.8648]>
+// Rudder -27.0 to 27.0 width 0.40  <[float64][Scaling][2.1221]>
+// Rudder2 -27.0 to 27.0 width 0.40  <[float64][Scaling][2.1221]>
+//-------------------------------------------------------
+// Corben Baby Ace v1.5 empty mass [kg] :264.0 fuelled [kg] :296.6 max [kg] :430.9
+//-------------------------------------------------------
+// No 0 LeftWheelHull single
+// Brakes   Fraction weight: 0.43734 kg :129.7
+// Pivot lon lat vert: -0.382040 0.213360 -0.426720
+// Extended angles   : 40.0 -40.0 0.0  lon lat axi
+// Normal angles     : 40.0 -40.0 0.0  lon lat axi
+// Length [m]: 1.1278 Radius [m]: 0.3566 Semi-width [m]: 0.1646
+// Dep_rat: NaN Scon: 2378.353027344
+// Deflection [m]- zero load : 0.0532 empty :0.0000 max :0.0000
+// Damping constants (lb/(ft/s)) :237.83531189 kg/(m/s) : 353.9379
+//-------------------------------------------------------
+// No 1 RightWheelHull single
+// Brakes   Fraction weight: 0.43734 kg :129.7
+// Pivot lon lat vert: -0.382040 -0.213360 -0.426720
+// Extended angles   : 40.0 40.0 0.0  lon lat axi
+// Normal angles     : 40.0 40.0 0.0  lon lat axi
+// Length [m]: 1.1278 Radius [m]: 0.3566 Semi-width [m]: 0.1646
+// Dep_rat: NaN Scon: 2378.353027344
+// Deflection [m]- zero load : 0.0532 empty :0.0000 max :0.0000
+// Damping constants (lb/(ft/s)) :237.83531189 kg/(m/s) : 353.9379
+//-------------------------------------------------------
+// No 2 TailWheelHull single   Steering (27.00/27.00)
+//    Fraction weight: 0.12532 kg :37.2
+// Pivot lon lat vert: -3.457472 0.000000 -0.237744
+// Extended angles   : -60.0 0.0 0.0  lon lat axi
+// Normal angles     : -60.0 0.0 0.0  lon lat axi
+// Length [m]: 0.3658 Radius [m]: 0.0610 Semi-width [m]: 0.0274
+// Dep_rat: NaN Scon: 203.278045654
+// Deflection [m]- zero load : 0.1785 empty :0.0000 max :0.0000
+// Damping constants (lb/(ft/s)) :20.327804565 kg/(m/s) : 30.2511
+//-------------------------------------------------------
