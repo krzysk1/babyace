@@ -2178,38 +2178,37 @@
             >			
 						
 			// stick
-            <[graphics_linear_interpolation][prop1Mapping_6343][]
+            <[graphics_linear_interpolation][StickRollTransformMapping][]
                 <[string8][Input][Yoke_roll_ratio_Input.Output]>
                 <[tmvector2d][Map][(-1.0 -0.174533)(0.0 0.0)(1.0 0.174533)]>
             >
-            <[graphics_rotation][prop1Rotate_6343][]
-                <[string8][Input][prop1Mapping_6343.Output]>
+            <[graphics_rotation][StickRollTransform][]
+                <[string8][Input][StickRollTransformMapping.Output]>
                 <[tmvector3d][Axis][1.0 0.0 0.0]>
                 <[tmvector3d][Pivot][0.246591 -0.000678 -0.496899]>
             >
-            <[graphics_linear_interpolation][prop1Mapping_6351][]
+            <[graphics_linear_interpolation][StickPitchTransformMapping][]
                 <[string8][Input][Yoke_pitch_ratio_Input.Output]>
                 <[tmvector2d][Map][(-1.0 -0.174533)(0.0 0.0)(1.0 0.174533)]>
             >
-            <[graphics_rotation][prop1Rotate_6351][]
-                <[string8][Input][prop1Mapping_6351.Output]>
+            <[graphics_rotation][StickPitchTransform][]
+                <[string8][Input][StickPitchTransformMapping.Output]>
                 <[tmvector3d][Axis][0.0 -1.0 0.0]>
                 <[tmvector3d][Pivot][0.066902 0.005381 -0.468752]>
-                <[string8][InputTransform][prop1Rotate_6343.Output]>
-            >
-            <[rigidbodygraphics][Stick][]
-                <[string8][GeometryList][ Prop1422720 ]>
-                <[uint32][PositionID][Fuselage.R]>
-                <[uint32][OrientationID][Fuselage.Q]>
-                <[string8][InputTransform][prop1Rotate_6351.Output]>
+                <[string8][InputTransform][StickRollTransform.Output]>
             >
             <[rigidbodygraphics][StickBase][]
                 <[string8][GeometryList][ Prop1618920 ]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
-                <[string8][InputTransform][prop1Rotate_6343.Output]>
+                <[string8][InputTransform][StickRollTransform.Output]>
             >		
-
+            <[rigidbodygraphics][Stick][]
+                <[string8][GeometryList][ Prop1422720 ]>
+                <[uint32][PositionID][Fuselage.R]>
+                <[uint32][OrientationID][Fuselage.Q]>
+                <[string8][InputTransform][StickPitchTransform.Output]>
+            >
 			// propeller
             <[rotatingbodygraphics][PropellerSpinner][]
                 <[string8][GeometryList][ Corben4t72849 ]>
@@ -2624,24 +2623,24 @@
 
             <[graphics_translation][StickHandBaseTransform][]
                 <[string8][Input][1]>
-                <[tmvector3d][Axis][0.0 0.0 0.03]>
+                <[tmvector3d][Axis][0.0 0.0 0.0]>
             >
             <[graphics_rotation][StickHandRollTransform][]
-      //          <[string8][Input][StickBaseTransformInput.Output]>
-                <[tmvector3d][Axis][1.000000 0.000000 0.000000]>
-                <[tmvector3d][Pivot][-0.570980 0.001375 -0.611435]>
+                <[string8][Input][StickRollTransformMapping.Output]>			
+                <[tmvector3d][Axis][1.0 0.0 0.0]>
+                <[tmvector3d][Pivot][0.246591 -0.000678 -0.496899]>
                 <[string8][InputTransform][StickHandBaseTransform.Output]>
             >
             <[graphics_rotation][StickTransformation][]
-      //          <[string8][Input][StickRollTransformInput.Output]>
-                <[tmvector3d][Axis][0.005047 -0.999987 0.000000]>
-                <[tmvector3d][Pivot][0.027695 0.001270 -0.587415]>
+                <[string8][Input][StickPitchTransformMapping.Output]>
+                <[tmvector3d][Axis][0.0 -1.0 0.0]>
+                <[tmvector3d][Pivot][0.066902 0.005381 -0.468752]>
                 <[string8][InputTransform][StickHandRollTransform.Output]>
             >
 
             <[graphics_translation][LeftFootBaseTransform][]
                 <[string8][Input][1]>
-                <[tmvector3d][Axis][0.08 -0.02 0.06]>
+                <[tmvector3d][Axis][0.0 0.0 0.0]>
             >
             <[graphics_translation][LeftPedalToeBrakeTransform][]
                 <[string8][Input][PilotHeadInput.Output]>
@@ -2650,7 +2649,7 @@
             >
             <[graphics_translation][RightFootBaseTransform][]
                 <[string8][Input][1]>
-                <[tmvector3d][Axis][0.08 0.02 0.06]>
+                <[tmvector3d][Axis][0.0 0.0 0.0]>
             >
             <[graphics_translation][RightPedalToeBrakeTransform][]
                 <[string8][Input][PilotHeadInput.Output]>
@@ -2659,7 +2658,7 @@
             >
             <[graphics_translation][ThrottleHandBaseTransformation][]
                 <[string8][Input][1]>
-                <[tmvector3d][Axis][0.1 -0.06 0.24]>
+                <[tmvector3d][Axis][0.0 0.0 0.0]>
             >
             <[graphics_input][ThrottleHandInput][]
                 <[uint32][InputID][ServoThrottle.Output]>
