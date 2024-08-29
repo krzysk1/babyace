@@ -1203,7 +1203,11 @@
                 <[uint32][InputID][ServoCheck.Output]> //sim/flightmodel/forces/g_axil
                 <[float64][Scaling][1.0000]>
             >
-
+            <[graphics_color][InstrumentsLight][]
+                <[string8][Input][0.2]>
+                <[tmvector3d][Color][ 0.8 0.7 0.0 ]>
+            >
+			
 			// Fuselage
             <[rigidbodygraphics][Fuselage][]
                 <[string8][GeometryList][ Corben5t10 Glasst18 Glasst18Exterior Corben3t608 Corben4t9 Corben8t13 Prop120 Corben1t6 Corben6t579011 Corben6t588611 Corben9t14 Corben9t10814 Corben9t21614 Corben9t32414 ]>
@@ -1226,6 +1230,7 @@
                 <[string8][GeometryList][ Turnslipga21 ]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
+                <[string8][InputIllumination0][InstrumentsLight.Output]>
             >
             <[graphics_input][BusVoltsInput][]
                 <[uint32][InputID][ServoCheck.Output]> //sim/cockpit2/electrical/bus_volts[0]
@@ -1241,6 +1246,7 @@
                 <[string8][Input][BusVoltsMapping.Output]>
                 <[tmvector3d][Axis][-0.978148 0.0 0.207912]>
                 <[tmvector3d][Pivot][0.067482 0.128350 0.112039]>
+                <[string8][InputIllumination0][InstrumentsLight.Output]>
             >
             <[graphics_input][SlipInput][]
                 <[uint32][InputID][BalanceIndicatorDeflection.Output]>
@@ -1259,6 +1265,7 @@
                 <[string8][Input][BalanceBallMapping.Output]>
                 <[tmvector3d][Axis][0.978148 0.0 -0.207912]>
                 <[tmvector3d][Pivot][0.069834 0.133297 0.155618]>
+                <[string8][InputIllumination0][InstrumentsLight.Output]>
             >
             <[graphics_input][Turn_rate_roll_deg_pilot_Input][]
                 <[uint32][InputID][RateOfTurn.Output]>
@@ -1279,6 +1286,7 @@
                 <[string8][Input][TurnIndicatorMapping.Output]>
                 <[tmvector3d][Axis][0.978148 0.0 -0.207911]>
                 <[tmvector3d][Pivot][0.047731 0.133179 0.053520]>
+                <[string8][InputIllumination0][InstrumentsLight.Output]>
             >
 
 			// checklist
@@ -1286,18 +1294,21 @@
                 <[string8][GeometryList][ Checklist2 ]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
+                <[string8][InputIllumination0][InstrumentsLight.Output]>
             >
 			// clipboard
             <[rigidbodygraphics][Clipboard][]
                 <[string8][GeometryList][ Clipboard3 ]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
+                <[string8][InputIllumination0][InstrumentsLight.Output]>
             >			
 			// airspeed
             <[rigidbodygraphics][AirspeedCase][]
                 <[string8][GeometryList][ Airspeed0 ]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
+                <[string8][InputIllumination0][InstrumentsLight.Output]>
             >
             <[graphics_input][AirspeedNeedlePosition][]
                 <[uint32][InputID][AirspeedIndicatorNeedle.Output]>
@@ -1323,12 +1334,14 @@
                 <[string8][Input][AirspeedNeedleMapping.Output]>
                 <[tmvector3d][Axis][0.978250 0.0 -0.207431]>
                 <[tmvector3d][Pivot][0.062250 0.049020 0.107938]>
+                <[string8][InputIllumination0][InstrumentsLight.Output]>
             >
 			// altimeter
             <[rigidbodygraphics][AltimeterCase][]
                 <[string8][GeometryList][ Altimeterag1 ]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
+                <[string8][InputIllumination0][InstrumentsLight.Output]>
             >
             <[graphics_input][AltimeterNeedle][]
                 <[uint32][InputID][AltimeterNeedle.Output]>
@@ -1341,6 +1354,7 @@
                 <[tmvector3d][Axis][-0.978148 0.0 0.207908]>
                 <[tmvector3d][Pivot][0.058187 -0.048565 0.108143]>
                 <[float64][Scaling][-0.0020614]>
+                <[string8][InputIllumination0][InstrumentsLight.Output]>
             >
             <[hingedbodygraphics][Altimeter1000][]
                 <[string8][GeometryList][ Altimeterag11731 ]>
@@ -1350,6 +1364,7 @@
                 <[tmvector3d][Axis][-0.978148 0.0 0.207908]>
                 <[tmvector3d][Pivot][0.058187 -0.048565 0.108143]>
                 <[float64][Scaling][-0.020614]>
+                <[string8][InputIllumination0][InstrumentsLight.Output]>
             >
             <[hingedbodygraphics][Altimeter100000][]
                 <[string8][GeometryList][ Altimeterag12481 ]>
@@ -1359,6 +1374,7 @@
                 <[tmvector3d][Axis][-0.978148 0.0 0.207908]>
                 <[tmvector3d][Pivot][0.058187 -0.048565 0.108143]>
                 <[float64][Scaling][-0.00020614]>
+                <[string8][InputIllumination0][InstrumentsLight.Output]>
             >			
             <[graphics_input][PressureSetting][]
                 <[uint32][InputID][PressureSetting.Output]>
@@ -1374,6 +1390,7 @@
                 <[string8][Input][PressureSettingMapping.Output]>
                 <[tmvector3d][Axis][-0.978155 0.0 0.207879]>
                 <[tmvector3d][Pivot][0.063984 -0.048332 0.107060]>
+                <[string8][InputIllumination0][InstrumentsLight.Output]>
             >
             <[hingedbodygraphics][AltimeterKnob][]
                 <[string8][GeometryList][ Altimeterag14341 ]>
@@ -1383,17 +1400,20 @@
                 <[tmvector3d][Axis][-0.978156 0.0 0.207873]>
                 <[tmvector3d][Pivot][0.034142 -0.021747 0.081278]>
                 <[float64][Scaling][-12.566372]>
+                <[string8][InputIllumination0][InstrumentsLight.Output]>
             >
 			// compass mag
             <[rigidbodygraphics][MagneticCompassCase][]
                 <[string8][GeometryList][ Compassmag5 Compassmag26855 ]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
+                <[string8][InputIllumination0][InstrumentsLight.Output]>
             >
             <[rigidbodygraphics][MagneticCompassCard][]
                 <[string8][GeometryList][ Compassmag27215 ]>
                 <[uint32][PositionID][MagneticCompassCard.R]>
                 <[uint32][OrientationID][MagneticCompassCard.Q]>
+                <[string8][InputIllumination0][InstrumentsLight.Output]>
             >
 
 			// engine CHT		
@@ -1401,6 +1421,7 @@
                 <[string8][GeometryList][ Enginecht15 ]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
+                <[string8][InputIllumination0][InstrumentsLight.Output]>
             >
             <[graphics_input][EngineCylinderHeadTemperatureInput][]
                 <[uint32][InputID][EngineCylinderHeadTemperature.Output]>
@@ -1422,12 +1443,14 @@
                 <[string8][Input][ChtIndicatorPilotMapping.Output]>
                 <[tmvector3d][Axis][0.978245 0.0 -0.207454]>
                 <[tmvector3d][Pivot][0.041274 -0.192955 0.014710]>
+                <[string8][InputIllumination0][InstrumentsLight.Output]>
             >
 			// engine oil temp
             <[rigidbodygraphics][EngineOilTempCase][]
                 <[string8][GeometryList][ Engineoiltemp16 ]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
+                <[string8][InputIllumination0][InstrumentsLight.Output]>
             >
             <[graphics_input][EngineOilTempInput][]
                 <[uint32][InputID][EngineOilTemperature.Output]>
@@ -1450,12 +1473,14 @@
                 <[string8][Input][EngineOilTempMapping.Output]>
                 <[tmvector3d][Axis][0.978245 0.0 -0.207454]>
                 <[tmvector3d][Pivot][0.041642 -0.150781 0.016592]>
+                <[string8][InputIllumination0][InstrumentsLight.Output]>
             >
 			// engine RPM / hobbs time hours
             <[rigidbodygraphics][EngineRPMCase][]
                 <[string8][GeometryList][ EngineRPMag17 ]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
+                <[string8][InputIllumination0][InstrumentsLight.Output]>
             >
             <[graphics_input][RotationSpeedInput][]
                 <[uint32][InputID][RotationSpeed.Output]>
@@ -1478,6 +1503,7 @@
                 <[string8][Input][RotationSpeedMapping.Output]>
                 <[tmvector3d][Axis][0.978147 0.0 -0.207916]>
                 <[tmvector3d][Pivot][0.052269 -0.134027 0.078035]>
+                <[string8][InputIllumination0][InstrumentsLight.Output]>
             >			
 			// hobbs time hours			
             <[graphics_input][Hobbs_time_hours_Input][]
@@ -1495,6 +1521,7 @@
                 <[string8][Input][engine_RPM_agMapping_4778.Output]>
                 <[tmvector3d][Axis][0.0 -1.0 0.0]>
                 <[tmvector3d][Pivot][0.071565 -0.132067 0.063455]>
+                <[string8][InputIllumination0][InstrumentsLight.Output]>
             >
             <[graphics_linear_interpolation][engine_RPM_agMapping_4784][]
                 <[string8][Input][Static_rotation_Input.Output]> //static_rotation
@@ -1507,6 +1534,7 @@
                 <[string8][Input][engine_RPM_agMapping_4784.Output]>
                 <[tmvector3d][Axis][0.0 -1.0 0.0]>
                 <[tmvector3d][Pivot][0.071565 -0.127899 0.063455]>
+                <[string8][InputIllumination0][InstrumentsLight.Output]>
             >
             <[graphics_linear_interpolation][engine_RPM_agMapping_4790][]
                 <[string8][Input][Static_rotation_Input.Output]> //static_rotation
@@ -1519,6 +1547,7 @@
                 <[string8][Input][engine_RPM_agMapping_4790.Output]>
                 <[tmvector3d][Axis][0.000113 -1.0 0.000533]>
                 <[tmvector3d][Pivot][0.071558 -0.127865 0.063504]>
+                <[string8][InputIllumination0][InstrumentsLight.Output]>
             >
             <[graphics_linear_interpolation][engine_RPM_agMapping_4796][]
                 <[string8][Input][Hobbs_time_hours_Input.Output]>
@@ -1543,6 +1572,7 @@
                 <[string8][Input][engine_RPM_agMapping_4823.Output]>
                 <[tmvector3d][Axis][-0.000078 -1.0 -0.000369]>
                 <[tmvector3d][Pivot][0.071545 -0.127907 0.063523]>
+                <[string8][InputIllumination0][InstrumentsLight.Output]>
             >
             <[graphics_linear_interpolation][engine_RPM_agMapping_4850][]
                 <[string8][Input][Hobbs_time_hours_Input.Output]>
@@ -1555,6 +1585,7 @@
                 <[string8][Input][engine_RPM_agMapping_4850.Output]>
                 <[tmvector3d][Axis][-0.000078 -1.0 -0.000369]>
                 <[tmvector3d][Pivot][0.071545 -0.123818 0.063523]>
+                <[string8][InputIllumination0][InstrumentsLight.Output]>
             >
 
             // fuel level
@@ -1575,6 +1606,7 @@
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
                 <[string8][InputTransform][FuelMeterMoving.Output]>
+                <[string8][InputIllumination0][InstrumentsLight.Output]>
             >
 			
             // instruments end
