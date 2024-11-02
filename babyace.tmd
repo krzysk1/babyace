@@ -184,7 +184,7 @@
             <[multibody_joint][JointFuselageTailGear][]
                 <[string8][Body0][Fuselage]>
                 <[string8][Body1][TailGear]>
-                <[tmvector3d][X0][0.0 0.0 1.0]>
+                <[tmvector3d][X0][ -0.034899 0.0  0.999391 ]>
                 <[tmvector3d][R0][ -3.744983 0.0 -0.465371 ]>
                 <[string8][InputLock][1.0]>
                 <[string8][InputPosition][ServoSteering.Output]>
@@ -1591,7 +1591,6 @@
 
             // instruments end
 
-
             <[graphics_linear_interpolation][Corben2_tMapping_1376][]
                 <[string8][Input][Yoke_roll_ratio_Input.Output]>
                 <[tmvector2d][Map][(-1.0 0.349066)(0.0 0.0)(1.0 -0.349066)]>
@@ -1617,6 +1616,7 @@
                 <[uint32][OrientationID][Fuselage.Q]>
                 <[string8][InputTransform][Corben2_tRotate_1384.Output]>
             >
+			
             <[graphics_linear_interpolation][Corben2_tMapping_1394][]
                 <[string8][Input][Yoke_roll_ratio_Input.Output]>
                 <[tmvector2d][Map][(-1.0 -0.266163)(0.0 0.0)(1.0 0.279253)]>
@@ -1949,9 +1949,6 @@
                 <[tmvector3d][Pivot][0.150527 0.041086 -0.218258]>
             >
 
-
-
-
 			// right gear
             <[rigidbodygraphics][RightGear][]
                 <[string8][GeometryList][ Corben4t42009 Corben9t747014 Corben9t757814 Corben3t787748 ]>
@@ -1983,10 +1980,6 @@
                 <[tmvector3d][Pivot][-3.516100 0.0 0.094049]>
             >
 			// left aileron
-            <[graphics_linear_interpolation][Corben6_tMapping_3243][]
-                <[string8][Input][Yoke_roll_ratio_Input.Output]>
-                <[tmvector2d][Map][(-1.0 -0.349066)(0.0 0.0)(1.0 0.349066)]>
-            >
             <[hingedbodygraphics][LeftAileron][]
                 <[string8][GeometryList][ Corben6t628211 Corben3t969668 ]>
                 <[uint32][PositionID][Fuselage.R]>
@@ -1996,10 +1989,6 @@
                 <[tmvector3d][Pivot][-0.494370 2.988400 0.621287]>
             >
 			// right aileron
-            <[graphics_linear_interpolation][Corben7_tMapping_3430][]
-                <[string8][Input][Yoke_roll_ratio_Input.Output]>
-                <[tmvector2d][Map][(-1.0 0.349066)(0.0 0.0)(1.0 -0.349066)]>
-            >
             <[hingedbodygraphics][RightAileron][]
                 <[string8][GeometryList][ Corben7t12 Corben3t8 ]>
                 <[uint32][PositionID][Fuselage.R]>
@@ -2050,27 +2039,7 @@
                 <[uint32][OrientationID][TailGear.Q]>
             //    <[string8][InputTransform][Corben9_tRotate_4294.Output]>
             >
-			// tail gear
-
-            <[graphics_linear_interpolation][Corben3_tMapping_1853][]
-                <[string8][Input][Tire_vertical_deflection_mtr_2_Input.Output]>
-                <[tmvector2d][Map][(0.0 0.0)(0.061000 0.157080)(0.165000 -0.314159)]>
-            >
-            <[graphics_rotation][Corben3_tRotate_1853][]
-                <[string8][Input][Corben3_tMapping_1853.Output]>
-                <[tmvector3d][Axis][0.0 -1.0 0.0]>
-                <[tmvector3d][Pivot][-3.539823 0.0 -0.326058]>
-            >
-            <[graphics_linear_interpolation][Corben3_tMapping_1860][]
-                <[string8][Input][Yoke_heading_ratio_Input.Output]>
-                <[tmvector2d][Map][(-1.0 -0.471239)(0.0 0.0)(1.0 0.471239)]>
-            >
-            <[graphics_rotation][Corben3_tRotate_1860][]
-                <[string8][Input][Corben3_tMapping_1860.Output]>
-                <[tmvector3d][Axis][-0.034899 0.0 0.999391]>
-                <[tmvector3d][Pivot][-3.744983 0.0 -0.465371]>
-                <[string8][InputTransform][Corben3_tRotate_1853.Output]>
-            >
+			// tail wheel
 
             <[graphics_wheel][TailWheel][]
                 <[uint32][PositionID]   [TailGear.R]>
@@ -2089,34 +2058,23 @@
                 <[string8][Input][Yoke_heading_ratio_Input.Output]>
                 <[tmvector2d][Map][(-1.0 -0.575959)(0.0 0.0)(1.0 0.488692)]>
             >
-            <[graphics_rotation][Corben3_tRotate_1874][]
+            <[hingedbodygraphics][TailGearRightLink][]
+                <[string8][GeometryList][ Corben3t785228 ]>
                 <[string8][Input][Corben3_tMapping_1874.Output]>
                 <[tmvector3d][Axis][0.0 0.0 -1.0]>
                 <[tmvector3d][Pivot][-3.740890 -0.047566 0.094049]>
-                <[string8][InputTransform][Corben3_tRotate_1860.Output]>
+                <[string8][Graphics][TailGear]>
             >
-            <[rigidbodygraphics][TailGearRightLink][]
-                <[string8][GeometryList][ Corben3t785228 ]>
-                <[uint32][PositionID][Fuselage.R]>
-                <[uint32][OrientationID][Fuselage.Q]>
-                <[string8][InputTransform][Corben3_tRotate_1874.Output]>
-            >
-
             <[graphics_linear_interpolation][Corben3_tMapping_1884][]
                 <[string8][Input][Yoke_heading_ratio_Input.Output]>
                 <[tmvector2d][Map][(-1.0 0.488692)(0.0 0.0)(1.0 -0.575959)]>
             >
-            <[graphics_rotation][Corben3_tRotate_1884][]
+            <[hingedbodygraphics][TailGearLeftLink][]
+                <[string8][GeometryList][ Corben3t786488 ]>
                 <[string8][Input][Corben3_tMapping_1884.Output]>
                 <[tmvector3d][Axis][0.0 0.0 1.0]>
                 <[tmvector3d][Pivot][-3.740890 0.047566 0.094049]>
-                <[string8][InputTransform][Corben3_tRotate_1860.Output]>
-            >
-            <[rigidbodygraphics][TailGearLeftLink][]
-                <[string8][GeometryList][ Corben3t786488 ]>
-                <[uint32][PositionID][Fuselage.R]>
-                <[uint32][OrientationID][Fuselage.Q]>
-                <[string8][InputTransform][Corben3_tRotate_1884.Output]>
+                <[string8][Graphics][TailGear]>
             >
 
 			// left pedal
