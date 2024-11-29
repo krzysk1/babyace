@@ -7,23 +7,23 @@
         <[string8][DisplayNameFull][Corben Baby Ace]>
         <[list_localized_text][Descriptions][]
             <[localized_text][element][0]
-                <[string8][Language][en]>
+                <[string8u][Language][en]>
                 <[string8][Text][The Ace Baby Ace was the world's first aircraft to be marketed as a homebuilt aircraft when its plans were offered for sale in 1929. Plans are still available and Baby Aces are still being built today. Orland Corben designed a series of aircraft for the Ace Aircraft Manufacturing Company, the Baby Ace, Junior Ace, and Super Ace. Corben's name was associated with the aircraft, and it is commonly known as the Corben Baby Ace. Made by Krzysztof Kaniewski. 3D model: FTLX Designs.]>
             >
             <[localized_text][element][1]
-                <[string8][Language][de]>
+                <[string8u][Language][de]>
                 <[string8][Text][Der Ace Baby Ace war das weltweit erste Flugzeug, das als Selbstbauflugzeug vermarktet wurde, als seine Baupläne 1929 zum Verkauf angeboten wurden. Die Pläne sind immer noch erhältlich, und Baby Aces werden auch heute noch gebaut. Orland Corben entwarf eine Serie von Flugzeugen für die Ace Aircraft Manufacturing Company, den Baby Ace, Junior Ace und Super Ace. Corbens Name war mit dem Flugzeug verbunden, und es ist allgemein als Corben Baby Ace bekannt. Hergestellt von Krzysztof Kaniewski. 3D-Modell: FTLX Designs.]>
             >
             <[localized_text][element][2]
-                <[string8][Language][pl]>
+                <[string8u][Language][pl]>
                 <[string8][Text][Baby Ace był pierwszym na świecie samolotem, który został wprowadzony do sprzedaży w 1929 roku. Plany są nadal dostępne, a Baby Ace są budowane do dziś. Orland Corben zaprojektował serię samolotów dla Ace Aircraft Manufacturing Company, Baby Ace, Junior Ace i Super Ace. Nazwisko Corbena było związane z tym samolotem i jest on powszechnie znany jako Corben Baby Ace. Wykonany przez Krzysztofa Kaniewskiego. Model 3D: FTLX Designs.]>
 			>
         >
         <[float64][MaximumTakeoffMass][430.9]>
         <[float64][WingSpan]          [8.1]>
-        <[uint]   [Year]              [1929]>
-        <[uint]   [UnitsBuilt]        [6884]>
-        <[uint]   [EngineCount]       [1]>
+        <[uint32] [Year]              [1929]>
+        <[uint32] [UnitsBuilt]        [6884]>
+        <[uint32] [EngineCount]       [1]>
         <[float64][EnginePower]       [48470]>
         <[float64][MinimumAirspeed]   [17.0]>
         <[float64][ApproachAirspeed]  [22.1]>
@@ -34,9 +34,9 @@
         <[float64][MaximumAltitude]   [6306.0]>
         <[float64][MaximumSpeed]      [62.5]>
         <[float64][MaximumRange]      [2276000.0]>
-        <[tmvector2d][FlapAirspeedRange]   [ 0.0  0.0  ]>
-        <[tmvector2d][NormalAirspeedRange] [ 17.0 52.5 ]>
-        <[tmvector2d][CautionAirspeedRange][ 52.5 62.5 ]>
+        <[vector2_float64][FlapAirspeedRange]   [ 0.0  0.0  ]>
+        <[vector2_float64][NormalAirspeedRange] [ 17.0 52.5 ]>
+        <[vector2_float64][CautionAirspeedRange][ 52.5 62.5 ]>
         <[string8][Tags][ airplane historical piston general_aviation gear tailgear ]>
         <[string8][Pilot][pilot_peter]>
     >

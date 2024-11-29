@@ -1,3 +1,0 @@
-Do not delete this folder
-
-Place here all *.tsb sound files from "jungmeister" aircraft located in your Aerofly FS4 installation path

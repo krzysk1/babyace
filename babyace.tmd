@@ -30,7 +30,7 @@
             <[camera_head][CameraPilot][]
                 <[string8][Tags][cockpit pilot]>
                 <[string8][Body][Fuselage]>
-                <[tmvector3d][R0][ -0.214 0.000 0.320 ]>
+                <[tmvector3d][R0][ -0.24 0.000 0.29 ]>
                 <[tmvector3d][Direction][ 1.0 0.0 0.0 ]>
                 <[float64][Kf][40.0]>
                 <[float64][Df][1.00]>
@@ -156,6 +156,24 @@
                 <[float64][Kd][260.3472]>
                 <[uint32][Type][0]>
             >
+            <[wheel][LeftWheelHull][]
+                <[string8][Body][LeftGear]>
+                <[tmvector3d][R0][ 0.352656 0.720995 -1.121020 ]>
+                <[float64][K][10000.0]>
+                <[float64][D][510.0]>
+                <[float64][Radius][0.215]>
+                <[float64][Width][0.195]>
+                <[float64][RimRadius][0.08]>
+                <[float64][Inflation][200000.0]>
+                <[string8][InputBrake][LeftBrakeInput.Output]>
+                <[float64][BrakeStrength][0.15]>
+            >
+            <[output][GroundRollSpeedLeft][]
+                <[string8][Input][LeftWheelHull.Speed]>
+            >
+            <[output][GroundRollLoadLeft][]
+                <[string8][Input][LeftWheelHull.Load]>
+            >
 
             // RightGear
             <[rigidbody][RightGear][]
@@ -172,6 +190,24 @@
                 <[float64][Kp][130000.34721]>
                 <[float64][Kd][260.3472]>
                 <[uint32][Type][0]>
+            >
+            <[wheel][RightWheelHull][]
+                <[string8][Body][RightGear]>
+                <[tmvector3d][R0][ 0.352656 -0.720995 -1.121020 ]>
+                <[float64][K][10000.0]>
+                <[float64][D][510.0]>
+                <[float64][Radius][0.215]>
+                <[float64][Width][0.195]>
+                <[float64][RimRadius][0.08]>
+                <[float64][Inflation][200000.0]>
+                <[string8][InputBrake][RightBrakeInput.Output]>
+                <[float64][BrakeStrength][0.15]>
+            >
+            <[output][GroundRollSpeedRight][]
+                <[string8][Input][RightWheelHull.Speed]>
+            >
+            <[output][GroundRollLoadRight][]
+                <[string8][Input][RightWheelHull.Load]>
             >
 
             // TailGear
@@ -1579,7 +1615,7 @@
             >
             <[graphics_translation][FuelMeterMoving][]
                 <[string8][Input][FuelMeterMapping.Output]>
-                <[tmvector3d][Axis][0.0 0.0 0.121090]>
+                <[tmvector3d][Axis][0.0 0.0 1.0]>
             >
             <[rigidbodygraphics][FuelLevelIndicator][]
                 <[string8][GeometryList][ Corben3t973148 ]>
@@ -1616,7 +1652,7 @@
                 <[uint32][OrientationID][Fuselage.Q]>
                 <[string8][InputTransform][Corben2_tRotate_1384.Output]>
             >
-			
+
             <[graphics_linear_interpolation][Corben2_tMapping_1394][]
                 <[string8][Input][Yoke_roll_ratio_Input.Output]>
                 <[tmvector2d][Map][(-1.0 -0.266163)(0.0 0.0)(1.0 0.279253)]>
@@ -1822,7 +1858,7 @@
             >
             <[graphics_translation][Corben2_tMoving_1634][]
                 <[string8][Input][Corben2_tMapping_1634.Output]>
-                <[tmvector3d][Axis][0.0 -0.012040 0.0]>
+                <[tmvector3d][Axis][0.0 1.0 0.0]> //-0.012040
             >
             <[rigidbodygraphics][Corben2_t_22380_7][]
                 <[string8][GeometryList][ Corben2t223807 ]>
@@ -1948,18 +1984,41 @@
                 <[tmvector3d][Axis][-1.0 0.0 0.0]>
                 <[tmvector3d][Pivot][0.150527 0.041086 -0.218258]>
             >
-
 			// right gear
             <[rigidbodygraphics][RightGear][]
                 <[string8][GeometryList][ Corben4t42009 Corben9t747014 Corben9t757814 Corben3t787748 ]>
                 <[uint32][PositionID][RightGear.R]>
                 <[uint32][OrientationID][RightGear.Q]>
             >
+            <[graphics_wheel][RightWheel][]
+                <[uint32][PositionID]   [RightGear.R]>
+                <[uint32][OrientationID][RightGear.Q]>
+                <[uint32][AngleID]      [RightWheelHull.RotationAngle]>
+                <[uint32][GroundID]     [RightWheelHull.Ground]>
+                <[uint32][DeformationID][RightWheelHull.Deformation]>
+                <[string8][GeometryList][ Corben3t827888 Corben2t173527 ]>
+                <[float64][Radius][0.215]>
+                <[float64][RimRadius][0.08]>
+                <[tmvector3d][Axis][0.0 1.0 0.0]>
+                <[tmvector3d][Pivot][0.352656 -0.721005 -1.121021]>
+            >			
 			// left gear
             <[rigidbodygraphics][LeftGear][]
                 <[string8][GeometryList][ Corben4t42609 Corben9t772214 Corben9t765014 Corben2t176647 Corben3t878408 ]>
                 <[uint32][PositionID][LeftGear.R]>
                 <[uint32][OrientationID][LeftGear.Q]>
+            >
+            <[graphics_wheel][LeftWheel][]
+                <[uint32][PositionID]   [LeftGear.R]>
+                <[uint32][OrientationID][LeftGear.Q]>
+                <[uint32][AngleID]      [LeftWheelHull.RotationAngle]>
+                <[uint32][GroundID]     [LeftWheelHull.Ground]>
+                <[uint32][DeformationID][LeftWheelHull.Deformation]>
+                <[string8][GeometryList][ Corben3t918548 Corben2t179767 ]> //Corben2t176647
+                <[float64][Radius][0.215]>
+                <[float64][RimRadius][0.08]>
+                <[tmvector3d][Axis][0.0 1.0 0.0]>
+                <[tmvector3d][Pivot][0.352656 0.720995 -1.121020]>
             >
 			// elevator
             <[hingedbodygraphics][Elevator][]
