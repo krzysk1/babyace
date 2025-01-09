@@ -22,7 +22,6 @@
             // cameras start
 
             <[camera][CameraFollow][]
-                <[string8][Description][Behind aircraft]>
                 <[string8][Body][Fuselage]>
                 <[tmvector3d][R0][ -8.3 0.0 1.0 ]>
                 <[tmvector3d][Direction][1.0 0.0 0.0]>
@@ -2001,7 +2000,7 @@
                 <[float64][RimRadius][0.08]>
                 <[tmvector3d][Axis][0.0 1.0 0.0]>
                 <[tmvector3d][Pivot][0.352656 -0.721005 -1.121021]>
-            >			
+            >
 			// left gear
             <[rigidbodygraphics][LeftGear][]
                 <[string8][GeometryList][ Corben4t42609 Corben9t772214 Corben9t765014 Corben2t176647 Corben3t878408 ]>
