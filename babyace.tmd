@@ -16,7 +16,6 @@
             // telemetry
             <[telemetry][Telemetry][]
                 <[string8][Body][Fuselage]>
-                <[tmvector3d][LookAtPosition][ 0.1 0.0 -0.1 ]>
             >
 
             // cameras start
@@ -38,14 +37,14 @@
                 <[bool][InCockpit][true]>
             >
             <[camera][CameraLeftWing][]
-                <[string8][Tags][left wing]>
+                <[string8][Tags][fuselage wing left]>
                 <[string8][Body][Fuselage]>
                 <[tmvector3d][R0][ 1.898 4.039 -0.633 ]>
                 <[tmvector3d][Direction][ -0.5266 -0.8399 0.1316 ]>
                 <[bool][InCockpit][false]>
             >
             <[camera][CameraRightWing][]
-                <[string8][Tags][right wing]>
+                <[string8][Tags][fuselage wing right]>
                 <[string8][Body][Fuselage]>
                 <[tmvector3d][R0][ -2.166 -4.039 0.833 ]>
                 <[tmvector3d][Direction][ 0.3484 0.9180 -0.1894 ]>
@@ -59,7 +58,7 @@
                 <[bool][InCockpit][false]>
             >
             <[camera][CameraTail][]
-                <[string8][Tags][tail]>
+                <[string8][Tags][tail stabilizer]>
                 <[string8][Body][Fuselage]>
                 <[tmvector3d][R0][ -3.166 0.000 1.389 ]>
                 <[tmvector3d][Direction][ 0.8768 0.0000 -0.4808 ]>
