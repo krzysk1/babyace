@@ -15,6 +15,18 @@
                 <[string8][Text][Der Ace Baby Ace war das weltweit erste Flugzeug, das als Selbstbauflugzeug vermarktet wurde, als seine Baupläne 1929 zum Verkauf angeboten wurden. Die Pläne sind immer noch erhältlich, und Baby Aces werden auch heute noch gebaut. Orland Corben entwarf eine Serie von Flugzeugen für die Ace Aircraft Manufacturing Company, den Baby Ace, Junior Ace und Super Ace. Corbens Name war mit dem Flugzeug verbunden, und es ist allgemein als Corben Baby Ace bekannt. Hergestellt von Krzysztof Kaniewski. 3D-Modell: FTLX Designs.]>
             >
             <[localized_text][element][2]
+                <[string8u][Language][fr]>
+                <[string8][Text][L'Ace Baby Ace a été le premier avion au monde à être commercialisé comme avion de construction amateur lorsque ses plans ont été mis en vente en 1929. Les plans sont toujours disponibles et des Baby Ace sont encore construits aujourd'hui. Orland Corben a conçu une série d'avions pour la société Ace Aircraft Manufacturing Company, les Baby Ace, Junior Ace et Super Ace. Le nom de Corben était associé à cet avion, communément appelé Corben Baby Ace. Réalisé par Krzysztof Kaniewski. Modèle 3D : FTLX Designs.]>
+			>
+            <[localized_text][element][3]
+                <[string8u][Language][es]>
+                <[string8][Text][El Ace Baby Ace fue el primer avión del mundo que se comercializó como avión de construcción casera cuando sus planos se pusieron a la venta en 1929. Los planos siguen estando disponibles y los Baby Ace se siguen fabricando en la actualidad. Orland Corben diseñó una serie de aviones para la Ace Aircraft Manufacturing Company: el Baby Ace, el Junior Ace y el Super Ace. El nombre de Corben se asoció al avión, que se conoce comúnmente como Corben Baby Ace. Fabricado por Krzysztof Kaniewski. Modelo 3D: FTLX Designs.]>
+			>
+            <[localized_text][element][4]
+                <[string8u][Language][it]>
+                <[string8][Text][L'Ace Baby Ace è stato il primo velivolo al mondo ad essere commercializzato come velivolo autocostruito quando i suoi progetti furono messi in vendita nel 1929. I progetti sono ancora disponibili e i Baby Ace vengono costruiti ancora oggi. Orland Corben progettò una serie di velivoli per la Ace Aircraft Manufacturing Company: il Baby Ace, il Junior Ace e il Super Ace. Il nome di Corben era associato al velivolo, comunemente noto come Corben Baby Ace. Realizzato da Krzysztof Kaniewski. Modello 3D: FTLX Designs.]>
+			>
+            <[localized_text][element][5]
                 <[string8u][Language][pl]>
                 <[string8][Text][Baby Ace był pierwszym na świecie samolotem, który został wprowadzony do sprzedaży w 1929 roku. Plany są nadal dostępne, a Baby Ace są budowane do dziś. Orland Corben zaprojektował serię samolotów dla Ace Aircraft Manufacturing Company, Baby Ace, Junior Ace i Super Ace. Nazwisko Corbena było związane z tym samolotem i jest on powszechnie znany jako Corben Baby Ace. Wykonany przez Krzysztofa Kaniewskiego. Model 3D: FTLX Designs.]>
 			>
@@ -34,6 +46,7 @@
         <[float64][MaximumAltitude]   [6306.0]>
         <[float64][MaximumSpeed]      [62.5]>
         <[float64][MaximumRange]      [2276000.0]>
+        <[vector2_float64][FlapAirspeedRange]   [  0.0  0.0 ]>
         <[vector2_float64][NormalAirspeedRange] [ 17.0 52.5 ]>
         <[vector2_float64][CautionAirspeedRange][ 52.5 62.5 ]>
         <[string8][Tags][ airplane historical piston general_aviation gear tailgear ]>
